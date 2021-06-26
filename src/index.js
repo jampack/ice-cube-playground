@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import { ThemeProvider } from 'ice-cube/components';
-import { DefaultTheme } from 'ice-cube/themes';
+import { ThemeProvider, DefaultTheme } from 'ice-cube/themes';
 
 import App from './App';
 import './css/playground.css';
