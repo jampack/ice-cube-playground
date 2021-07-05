@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 
-import { Checkbox, CheckboxGroup } from 'ice-cube/components';
+import { Radio, RadioGroup } from 'ice-cube/components';
 import ComponentWrapper from '../core/ComponentWrapper';
 
 function View() {
-  const [checkbox, setCheckbox] = useState(true);
-  const [checkboxGroup, setCheckboxGroup] = useState();
+  const [radio, setRadio] = useState(true);
+  const [radioGroup, setRadioGroup] = useState();
   const items = [
     { value: 1, label: 'item 1' },
     { value: 2, label: 'item 2' },
@@ -22,21 +22,21 @@ function View() {
   return (
     <div className='row'>
       <ComponentWrapper title='Default'>
-        <Checkbox value={checkbox} onChange={(r) => setCheckbox(r)}>
+        <Radio value={radio} onChange={(r) => setRadio(r)}>
           Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
-        </Checkbox>
+        </Radio>
       </ComponentWrapper>
 
       <ComponentWrapper title='Label Prop'>
-        <Checkbox value={checkbox} onChange={(r) => setCheckbox(r)} label='do you agree?' />
+        <Radio label='Yolo' value={radio} onChange={(r) => setRadio(r)} />
       </ComponentWrapper>
 
-      <ComponentWrapper title='Checkbox Group Default'>
-        <CheckboxGroup data={items} value={checkboxGroup} onChange={(r) => setCheckboxGroup([...r])} />
+      <ComponentWrapper title='Radio Group Default'>
+        <RadioGroup data={items} value={radioGroup} onChange={(r) => setRadioGroup(r)} />
       </ComponentWrapper>
 
-      <ComponentWrapper title='Checkbox Group Horizontal'>
-        <CheckboxGroup data={items} value={checkboxGroup} onChange={(r) => setCheckboxGroup([...r])} horizontal />
+      <ComponentWrapper title='Radio Group Horizontal'>
+        <RadioGroup data={items} value={radioGroup} onChange={(r) => setRadioGroup(r)} horizontal />
       </ComponentWrapper>
     </div>
   );
