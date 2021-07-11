@@ -4,14 +4,12 @@ import View from '../components/textFieldBuilder/View';
 
 function TextFieldPage() {
   return (
-    <div className='container-fluid no-padding'>
-      <div className='container-body'>
-        <div className='left'>
-          <Build />
-        </div>
-        <div className='right'>
-          <View />
-        </div>
+    <div className='container-body'>
+      <div className='left'>
+        <Build />
+      </div>
+      <div className='right'>
+        <View />
       </div>
     </div>
   );

@@ -109,6 +109,10 @@ function View() {
       <ComponentWrapper title='Prepend Icon'>
         <Button prependIcon='fas fa-cube'>Button text</Button>
       </ComponentWrapper>
+
+      <ComponentWrapper title='Append Icon'>
+        <Button appendIcon='fas fa-cube'>Button text</Button>
+      </ComponentWrapper>
     </div>
   );
 }
