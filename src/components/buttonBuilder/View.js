@@ -113,6 +113,20 @@ function View() {
       <ComponentWrapper title='Append Icon'>
         <Button appendIcon='fas fa-cube'>Button text</Button>
       </ComponentWrapper>
+
+      <ComponentWrapper title='Disabled'>
+        <Button disabled>Button text</Button>
+      </ComponentWrapper>
+
+      <ComponentWrapper title='Loading'>
+        <Button loading>Button text</Button>
+      </ComponentWrapper>
+
+      <ComponentWrapper title='Custom Loading Spinner'>
+        <Button loading loadingSpinner={<span className='fas fa-atom fa-spin fa-2x' />}>
+          Button text
+        </Button>
+      </ComponentWrapper>
     </div>
   );
 }

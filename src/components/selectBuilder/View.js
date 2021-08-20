@@ -5,7 +5,7 @@ import ComponentWrapper from '../core/ComponentWrapper';
 
 function View() {
   const items = [
-    { value: 1, label: 'item 1' },
+    { value: 1, label: 'In publishing and graphic design Lorem ipsum is a placeholder text commonly' },
     { value: 2, label: 'item 2' },
     { value: 3, label: 'item 3' },
     { value: 4, label: 'item 4' },
@@ -22,7 +22,36 @@ function View() {
   return (
     <div className='row'>
       <ComponentWrapper title='Default'>
-        <Select data={items} value={val} onChange={(r) => setVal(r)} />
+        <Select
+          data={items}
+          value={val}
+          onChange={(r) => setVal(r)}
+          label='Label'
+          placeholder='Placeholder Placeholder Placeholder'
+        />
+      </ComponentWrapper>
+
+      <ComponentWrapper title='Outlined'>
+        <Select data={items} value={val} onChange={(r) => setVal(r)} label='Label' placeholder='Placeholder' outlined />
+      </ComponentWrapper>
+
+      <ComponentWrapper title='Underlined'>
+        <Select
+          data={items}
+          value={val}
+          onChange={(r) => setVal(r)}
+          label='Label'
+          placeholder='Placeholder'
+          underlined
+        />
+      </ComponentWrapper>
+
+      <ComponentWrapper title='Filled'>
+        <Select data={items} value={val} onChange={(r) => setVal(r)} label='Label' placeholder='Placeholder' filled />
+      </ComponentWrapper>
+
+      <ComponentWrapper title='Block'>
+        <Select data={items} value={val} onChange={(r) => setVal(r)} label='Label' placeholder='Placeholder' block />
       </ComponentWrapper>
     </div>
   );

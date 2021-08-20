@@ -9,23 +9,23 @@ function View() {
   return (
     <div className='row'>
       <ComponentWrapper title='Default'>
-        <TextField value={value} onChange={(r) => setValue(r)} label='Label' />
+        <TextField value={value} onChange={(r) => setValue(r)} label='Label' placeholder='Placeholder' />
       </ComponentWrapper>
 
       <ComponentWrapper title='Outlined'>
-        <TextField value={value} onChange={(r) => setValue(r)} outlined label='Label' />
+        <TextField value={value} onChange={(r) => setValue(r)} outlined label='Label' placeholder='Placeholder' />
       </ComponentWrapper>
 
       <ComponentWrapper title='Underlined'>
-        <TextField value={value} onChange={(r) => setValue(r)} underlined label='Label' />
+        <TextField value={value} onChange={(r) => setValue(r)} underlined label='Label' placeholder='Placeholder' />
       </ComponentWrapper>
 
       <ComponentWrapper title='Filled'>
-        <TextField value={value} onChange={(r) => setValue(r)} filled label='Label' />
+        <TextField value={value} onChange={(r) => setValue(r)} filled label='Label' placeholder='Placeholder' />
       </ComponentWrapper>
 
       <ComponentWrapper title='Block'>
-        <TextField value={value} onChange={(r) => setValue(r)} label='Label' block />
+        <TextField value={value} onChange={(r) => setValue(r)} label='Label' placeholder='Placeholder' block />
       </ComponentWrapper>
     </div>
   );
