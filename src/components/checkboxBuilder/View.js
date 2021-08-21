@@ -31,12 +31,20 @@ function View() {
         <Checkbox value={checkbox} onChange={(r) => setCheckbox(r)} label='do you agree?' />
       </ComponentWrapper>
 
+      <ComponentWrapper title='Disabled'>
+        <Checkbox value={checkbox} onChange={(r) => setCheckbox(r)} label='do you agree?' disabled />
+      </ComponentWrapper>
+
       <ComponentWrapper title='Checkbox Group Default'>
         <CheckboxGroup data={items} value={checkboxGroup} onChange={(r) => setCheckboxGroup([...r])} />
       </ComponentWrapper>
 
       <ComponentWrapper title='Checkbox Group Horizontal'>
         <CheckboxGroup data={items} value={checkboxGroup} onChange={(r) => setCheckboxGroup([...r])} horizontal />
+      </ComponentWrapper>
+
+      <ComponentWrapper title='Checkbox Group Disabled'>
+        <CheckboxGroup data={items} value={checkboxGroup} onChange={(r) => setCheckboxGroup([...r])} disabled />
       </ComponentWrapper>
     </div>
   );
