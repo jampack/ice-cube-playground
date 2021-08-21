@@ -50,6 +50,10 @@ function View() {
         <Select data={items} value={val} onChange={(r) => setVal(r)} label='Label' placeholder='Placeholder' filled />
       </ComponentWrapper>
 
+      <ComponentWrapper title='Disabled'>
+        <Select data={items} value={val} onChange={(r) => setVal(r)} label='Label' placeholder='Placeholder' disabled />
+      </ComponentWrapper>
+
       <ComponentWrapper title='Block'>
         <Select data={items} value={val} onChange={(r) => setVal(r)} label='Label' placeholder='Placeholder' block />
       </ComponentWrapper>

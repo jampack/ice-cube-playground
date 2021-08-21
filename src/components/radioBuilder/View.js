@@ -31,12 +31,20 @@ function View() {
         <Radio label='Yolo' value={radio} onChange={(r) => setRadio(r)} />
       </ComponentWrapper>
 
+      <ComponentWrapper title='Disabled'>
+        <Radio label='Yolo' value={radio} onChange={(r) => setRadio(r)} disabled />
+      </ComponentWrapper>
+
       <ComponentWrapper title='Radio Group Default'>
         <RadioGroup data={items} value={radioGroup} onChange={(r) => setRadioGroup(r)} />
       </ComponentWrapper>
 
       <ComponentWrapper title='Radio Group Horizontal'>
         <RadioGroup data={items} value={radioGroup} onChange={(r) => setRadioGroup(r)} horizontal />
+      </ComponentWrapper>
+
+      <ComponentWrapper title='Radio Group Disabled'>
+        <RadioGroup data={items} value={radioGroup} onChange={(r) => setRadioGroup(r)} disabled />
       </ComponentWrapper>
     </div>
   );

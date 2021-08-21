@@ -24,6 +24,10 @@ function View() {
         <TextField value={value} onChange={(r) => setValue(r)} filled label='Label' placeholder='Placeholder' />
       </ComponentWrapper>
 
+      <ComponentWrapper title='Disabled'>
+        <TextField value={value} onChange={(r) => setValue(r)} label='Label' placeholder='Placeholder' disabled />
+      </ComponentWrapper>
+
       <ComponentWrapper title='Block'>
         <TextField value={value} onChange={(r) => setValue(r)} label='Label' placeholder='Placeholder' block />
       </ComponentWrapper>
