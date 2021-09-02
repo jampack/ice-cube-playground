@@ -9,7 +9,7 @@ function View() {
   const items = [
     { value: 1, label: 'item 1' },
     { value: 2, label: 'item 2' },
-    { value: 3, label: 'item 3' },
+    { value: 3, label: 'item 3 a long text item' },
     { value: 4, label: 'item 4' },
     { value: 5, label: 'item 5' },
     { value: 6, label: 'item 6' },
@@ -35,6 +35,24 @@ function View() {
         <Checkbox value={checkbox} onChange={(r) => setCheckbox(r)} label='do you agree?' disabled />
       </ComponentWrapper>
 
+      <ComponentWrapper title='Help Text'>
+        <Checkbox
+          value={checkbox}
+          onChange={(r) => setCheckbox(r)}
+          label='do you agree?'
+          helpText='In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.'
+        />
+      </ComponentWrapper>
+
+      <ComponentWrapper title='Error'>
+        <Checkbox
+          value={checkbox}
+          onChange={(r) => setCheckbox(r)}
+          label='do you agree?'
+          error='In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.'
+        />
+      </ComponentWrapper>
+
       <ComponentWrapper title='Checkbox Group Default'>
         <CheckboxGroup data={items} value={checkboxGroup} onChange={(r) => setCheckboxGroup([...r])} />
       </ComponentWrapper>
@@ -45,6 +63,24 @@ function View() {
 
       <ComponentWrapper title='Checkbox Group Disabled'>
         <CheckboxGroup data={items} value={checkboxGroup} onChange={(r) => setCheckboxGroup([...r])} disabled />
+      </ComponentWrapper>
+
+      <ComponentWrapper title='Checkbox Group Help Text'>
+        <CheckboxGroup
+          data={items}
+          value={checkboxGroup}
+          onChange={(r) => setCheckboxGroup([...r])}
+          helpText='In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.'
+        />
+      </ComponentWrapper>
+
+      <ComponentWrapper title='Checkbox Group Error'>
+        <CheckboxGroup
+          data={items}
+          value={checkboxGroup}
+          onChange={(r) => setCheckboxGroup([...r])}
+          error='In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.'
+        />
       </ComponentWrapper>
     </div>
   );

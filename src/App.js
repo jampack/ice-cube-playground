@@ -4,7 +4,15 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import { ThemeProvider, DefaultTheme } from 'ice-cube/themes';
 import { useSelector } from 'react-redux';
-import { AllComponentsPage, ButtonPage, CheckboxPage, RadioPage, TextFieldPage, SelectPage } from './pages';
+import {
+  AllComponentsPage,
+  ButtonPage,
+  CheckboxPage,
+  RadioPage,
+  TextFieldPage,
+  SelectPage,
+  TextareaPage,
+} from './pages';
 import withMasterLayout from './pages/layouts/MasterLayout';
 
 const App = () => {
@@ -18,6 +26,7 @@ const App = () => {
           <Route path='/checkbox' component={withMasterLayout(CheckboxPage)} />
           <Route path='/radio' component={withMasterLayout(RadioPage)} />
           <Route path='/text-field' component={withMasterLayout(TextFieldPage)} />
+          <Route path='/textarea' component={withMasterLayout(TextareaPage)} />
           <Route path='/select' component={withMasterLayout(SelectPage)} />
           <Route path='/' component={AllComponentsPage} />
         </Switch>

@@ -57,6 +57,28 @@ function View() {
       <ComponentWrapper title='Block'>
         <Select data={items} value={val} onChange={(r) => setVal(r)} label='Label' placeholder='Placeholder' block />
       </ComponentWrapper>
+
+      <ComponentWrapper title='Help Text'>
+        <Select
+          data={items}
+          value={val}
+          onChange={(r) => setVal(r)}
+          label='Label'
+          placeholder='Placeholder'
+          helpText='In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.'
+        />
+      </ComponentWrapper>
+
+      <ComponentWrapper title='Error'>
+        <Select
+          data={items}
+          value={val}
+          onChange={(r) => setVal(r)}
+          label='Label'
+          placeholder='Placeholder'
+          error='In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.'
+        />
+      </ComponentWrapper>
     </div>
   );
 }

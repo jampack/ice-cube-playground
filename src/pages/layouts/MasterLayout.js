@@ -8,7 +8,7 @@ const withMasterLayout = (WrappedComponent) => (props) => {
   const mode = useSelector((state) => state.theme.mode);
   return (
     <div className='container-fluid no-padding'>
-      <div className='row'>
+      <div className='row no-padding'>
         <div className='col-12'>
           <Button
             onClick={() => dispatch(toggleMode())}

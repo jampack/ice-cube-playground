@@ -22,6 +22,10 @@ function AllComponentsPage() {
             TextField
           </Link>
           <br />
+          <Link to='/textarea' target='_blank'>
+            Textarea
+          </Link>
+          <br />
           <Link to='/select' target='_blank'>
             Select
           </Link>
